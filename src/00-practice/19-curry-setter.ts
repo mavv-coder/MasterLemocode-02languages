@@ -20,28 +20,33 @@ interface Person {
   age: number;
 }
 
-const julia: Person = { name: "Julia", surname: "Álvarez", age: 19 };
+// const julia: Person = { name: "Julia", surname: "Álvarez", age: 19 };
 
-const set = (obj: Person, key: string, value: string | number): Person => {
+// const set = (obj: Person, key: string, value: string | number): Person => {
+//   const { ...rest } = obj;
+//   rest[key] = value;
+//   return rest;
+// };
+
+// const updatedJulia = set(julia, "age", 25);
+
+// console.log(updatedJulia); // { name: 'Julia', surname: 'Álvarez', age: 25 }
+// console.log(julia); // { name: 'Julia', surname: 'Álvarez', age: 19 }
+// console.log(julia === updatedJulia); // false
+
+// OPCIONAL
+const set = (key: string) => (obj: Person, value: string | number): Person => {
   const { ...rest } = obj;
   rest[key] = value;
   return rest;
 };
 
-const updatedJulia = set(julia, "age", 25);
+const setName = set("name");
+const setSurName = set("surname");
+const setAge = set("age");
 
-console.log(updatedJulia); // { name: 'Julia', surname: 'Álvarez', age: 25 }
-console.log(julia); // { name: 'Julia', surname: 'Álvarez', age: 19 }
-console.log(julia === updatedJulia); // false
+const julia = { name: "Julia", surname: "Álvarez", age: 19 };
 
-// OPCIONAL
-
-// const setName = set(/* ... */);
-// const setSurName = set(/* ... */);
-// const setAge = set(/* ... */);
-
-// const julia = { name: "Julia", surname: "Álvarez", age: 19 };
-
-// console.log(setName(julia, "Ana")); // { name: 'Ana', surname: 'Álvarez', age: 19 };
-// console.log(setSurname(julia, "González")); // { name: 'Julia', surname: 'González', age: 19 };
-// console.log(setAge(julia, 25)); // { name: 'Julia', surname: 'Álvarez', age: 25 }
+console.log(setName(julia, "Ana")); // { name: 'Ana', surname: 'Álvarez', age: 19 };
+console.log(setSurName(julia, "González")); // { name: 'Julia', surname: 'González', age: 19 };
+console.log(setAge(julia, 25)); // { name: 'Julia', surname: 'Álvarez', age: 25 }

@@ -17,7 +17,7 @@
 // import "./00-practice/16-reminder.js";
 // import "./00-practice/17-swap.js";
 // import "./00-practice/18-qualifications-summary.js";
-// import "./00-practice/19-curry-setter.js";
+import "./00-practice/19-curry-setter.js";
 // import "./00-practice/20-morse.js";
 // DERIVERABLE - - - - -
 // import "./01-deliverables/exercise-01.js";
@@ -26,7 +26,7 @@
 // import "./01-deliverables/exercise-04.js";
 // import "./01-deliverables/exercise-05.js";
 // CHALLENGE - - - - -
-import "./02-challenges/exercise-01.js";
+// import "./02-challenges/exercise-01.js";
 // import "./02-challenges/exercise-02.js";
 // import "./02-challenges/exercise-03.js";
 // import "./02-challenges/exercise-04.js";
