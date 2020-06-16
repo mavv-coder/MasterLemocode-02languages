@@ -47,8 +47,7 @@ const expensiveFunction: ExpensiveFunction<number> = () => {
  * sean undefined. ¿Podrías hacer una versión aceptando argumentos? ¿Cómo la tiparías con 
  * TS?
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-type Primitive = boolean | number | string;
-type RepeatTextFn = (repetitions: number, text: Primitive) => Primitive;
+type RepeatTextFn = <T>(repetitions: number, text: T) => string;
 
 let count = 0;
 const repeatText: RepeatTextFn = (repetitions, text) => (
@@ -60,9 +59,6 @@ const memoize = (fn: RepeatTextFn): RepeatTextFn => {
 
   return (...args) => {
     let [repetitions, text] = args;
-
-    if (typeof repetitions === "undefined" || typeof text === "undefined")
-      return "Undefined arguments are not allowed";
 
     for (let prop in cache) {
       if (`${text}${repetitions}` === prop) return cache[prop];

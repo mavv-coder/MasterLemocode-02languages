@@ -15,9 +15,13 @@ const sample: MultiArray<number> = [1, [2, 3], [[4], [5, [6]]], [7, [8, [9]]]];
 
 type FlatFn = (arr: MultiArray<number>) => number[];
 
+// He tenido que meter este tipo para forzar el casting de la fn inferior porque me daba
+// dos errores. No sé si habría una forma más limpia de hacer esto.
+type X = number;
+
 const flat: FlatFn = (arr) =>
-  arr.some((el: MultiArray<number>) => Array.isArray(el))
+  (arr as X[]).some((el: MultiArray<number>) => Array.isArray(el))
     ? flat([].concat(...arr))
-    : arr;
+    : (arr as X[]);
 
 console.log(flat(sample));
