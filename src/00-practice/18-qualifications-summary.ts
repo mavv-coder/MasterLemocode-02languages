@@ -13,48 +13,88 @@ console.log("************** PRACTICE 18 *********************");
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 interface Student {
   name: string;
-  califications: number[];
+  qualifications: number[];
 }
 
 interface StudentSummary {
   name: string;
-  highestGrade: number;
-  average: number;
+  highestQualification: number;
+  averageQualifications: string;
 }
 
 const students: Student[] = [
   {
     name: "Juan",
-    califications: [1.56, 2.13, 7.53, 9.71, 2.67, 2.43, 2.86, 9.42, 8.08, 7.34],
+    qualifications: [
+      1.56,
+      2.13,
+      7.53,
+      9.71,
+      2.67,
+      2.43,
+      2.86,
+      9.42,
+      8.08,
+      7.34,
+    ],
   },
   {
     name: "Álvaro",
-    califications: [4.49, 1.52, 7.0, 8.3, 8.01, 6.45, 3.72, 3.27, 6.99, 6.01],
+    qualifications: [4.49, 1.52, 7.0, 8.3, 8.01, 6.45, 3.72, 3.27, 6.99, 6.01],
   },
   {
     name: "María",
-    califications: [2.99, 7.33, 1.14, 3.26, 0.98, 2.94, 4.99, 4.51, 1.8, 9.3],
+    qualifications: [2.99, 7.33, 1.14, 3.26, 0.98, 2.94, 4.99, 4.51, 1.8, 9.3],
   },
   {
     name: "Jorge",
-    califications: [4.6, 3.63, 9.07, 9.03, 3.05, 6.61, 4.81, 1.39, 2.97, 8.69],
+    qualifications: [4.6, 3.63, 9.07, 9.03, 3.05, 6.61, 4.81, 1.39, 2.97, 8.69],
   },
   {
     name: "Mónica",
-    califications: [9.72, 6.07, 1.11, 4.72, 0.04, 1.56, 0.66, 3.87, 6.97, 9.48],
+    qualifications: [
+      9.72,
+      6.07,
+      1.11,
+      4.72,
+      0.04,
+      1.56,
+      0.66,
+      3.87,
+      6.97,
+      9.48,
+    ],
   },
 ];
 
-// const calcHighestGrade = (califications: number[]): number => {};
+const calcHighestGrade = (qualifications: number[]): number => {
+  let [head, ...tail] = qualifications;
+  qualifications.filter((el) => {
+    if (el > head) head = el;
+  });
+  return head;
+};
 
-// const calcAverage = (califications: number[]): number => {};
+const calcAverage = (qualifications: number[]): string =>
+  (
+    qualifications.reduce((res, el) => (res += el), 0) / qualifications.length
+  ).toPrecision(3);
 
-// const summarizeClassRoom = (studentList: Student[]): StudentSummary[] => {
-//   calcAverage(el.califications);
-//   calcHighestGrade(el.califications);
-// };
+const summarizeClassRoom = (studentList: Student[]): StudentSummary[] => {
+  return studentList.map((el) => {
+    let student = {
+      name: "",
+      highestQualification: 0,
+      averageQualifications: "",
+    };
+    student.name = el.name;
+    student.highestQualification = calcHighestGrade(el.qualifications);
+    student.averageQualifications = calcAverage(el.qualifications);
+    return student;
+  });
+};
 
-// console.log(summarizeClassRoom(students));
+console.log(summarizeClassRoom(students));
 // [
 //   { name: 'Juan', highestCalification: 9.71, averageCalifications: '5.37' },
 //   { name: 'Álvaro', highestCalification: 8.3, averageCalifications: '5.58' },

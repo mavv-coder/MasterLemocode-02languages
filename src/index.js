@@ -16,8 +16,8 @@
 // import "./00-practice/15-players-order.js";
 // import "./00-practice/16-reminder.js";
 // import "./00-practice/17-swap.js";
-// import "./00-practice/18-qualifications-summary.js";
-import "./00-practice/19-curry-setter.js";
+import "./00-practice/18-qualifications-summary.js";
+// import "./00-practice/19-curry-setter.js";
 // import "./00-practice/20-morse.js";
 // DERIVERABLE - - - - -
 // import "./01-deliverables/exercise-01.js";
