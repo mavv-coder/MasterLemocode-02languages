@@ -7,11 +7,13 @@ console.log("************** PRACTICE 11 *********************");
  * CHALLENGE:
  * Repite el ejercicio anterior sin utilizar arrays auxiliares ni bucles for/do/while.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-const subsets = (word: string): string[] => {
+type SubsetsReturn = (word: string, n: number) => string[];
+
+const subsets = (word: string): SubsetsReturn => {
   let cache: string[] = [];
   let index = -1;
 
-  function addWord(word: string, n: number) {
+  function addWord(word, n) {
     if (Math.abs(word.length) === Math.abs(n)) {
       return cache;
     } else {

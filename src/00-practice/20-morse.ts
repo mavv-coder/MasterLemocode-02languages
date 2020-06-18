@@ -39,61 +39,101 @@ console.log("************** PRACTICE 20 *********************");
  *  - La separación entre letras es de 3 puntos.
  *  - La separación entre palabras es de 7 puntos.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-const morseAlphabet = {
-  "0": "-----",
-  "1": ".----",
-  "2": "..---",
-  "3": "...--",
-  "4": "....-",
-  "5": ".....",
-  "6": "-....",
-  "7": "--...",
-  "8": "---..",
-  "9": "----.",
-  a: ".-",
-  b: "-...",
-  c: "-.-.",
-  d: "-..",
-  e: ".",
-  f: "..-.",
-  g: "--.",
-  h: "....",
-  i: "..",
-  j: ".---",
-  k: "-.-",
-  l: ".-..",
-  m: "--",
-  n: "-.",
-  o: "---",
-  p: ".--.",
-  q: "--.-",
-  r: ".-.",
-  s: "...",
-  t: "-",
-  u: "..-",
-  v: "...-",
-  w: ".--",
-  x: "-..-",
-  y: "-.--",
-  z: "--..",
-  ".": ".-.-.-",
-  ",": "--..--",
-  "?": "..--..",
-  "!": "-.-.--",
-  "-": "-....-",
-  "/": "-..-.",
-  "@": ".--.-.",
-  "(": "-.--.",
-  ")": "-.--.-",
+interface ReturnObj {
+  translate: () => void;
+  timeOut: (Arr: string[]) => void;
+  writer: (x: string) => void;
+}
+
+const message: string = "SOS SOS";
+
+const transistorFactory = (morseMsg: string, endMsg: string): ReturnObj => {
+  const morseAlphabet = {
+    "0": "-----",
+    "1": ".----",
+    "2": "..---",
+    "3": "...--",
+    "4": "....-",
+    "5": ".....",
+    "6": "-....",
+    "7": "--...",
+    "8": "---..",
+    "9": "----.",
+    a: ".-",
+    b: "-...",
+    c: "-.-.",
+    d: "-..",
+    e: ".",
+    f: "..-.",
+    g: "--.",
+    h: "....",
+    i: "..",
+    j: ".---",
+    k: "-.-",
+    l: ".-..",
+    m: "--",
+    n: "-.",
+    o: "---",
+    p: ".--.",
+    q: "--.-",
+    r: ".-.",
+    s: "...",
+    t: "-",
+    u: "..-",
+    v: "...-",
+    w: ".--",
+    x: "-..-",
+    y: "-.--",
+    z: "--..",
+    ".": ".-.-.-",
+    ",": "--..--",
+    "?": "..--..",
+    "!": "-.-.--",
+    "-": "-....-",
+    "/": "-..-.",
+    "@": ".--.-.",
+    "(": "-.--.",
+    ")": "-.--.-",
+  };
+
+  return {
+    /* El objetivo de la función translate sería elaborar un array compuesto de . y /
+     * teniendo en cuenta el mensaje entrante. De esta forma, se obtiene una colección
+     * en dicho array que puede recorrerse asignando al punto el valor 1 y a la barra
+     * el valor 0. */
+    translate: function () {
+      const msgArr = Array.from(morseMsg.toLowerCase());
+      let result = "";
+      msgArr.forEach((el) => {
+        if (el === " ") result += "////";
+        for (let key in morseAlphabet) {
+          if (key === el)
+            result += Array.from(morseAlphabet[key]).join("/") + "///";
+        }
+      });
+      result = result.slice(0, -3);
+      let resultArr = Array.from(result).map((el) => (el === "-" ? "..." : el));
+      resultArr = Array.from(resultArr.join(""));
+      this.timeOut(resultArr);
+    },
+
+    timeOut: async function (resultArr) {
+      for (let i = 0; i < resultArr.length; i++) {
+        const ch = await new Promise((resolve) => {
+          setTimeout(function () {
+            resolve(resultArr[i]);
+          }, 500);
+        });
+        this.writer(ch);
+      }
+      console.log(endMsg);
+    },
+
+    writer: function (ch) {
+      console.log(ch === "." ? "1" : "0");
+    },
+  };
 };
 
-// const morse () => {
-
-// // SetTimeOut recibe el número de puntos y devuelve el tiempo a esperar
-
-// // Function para escribir en consola lo que llega
-
-//   return {
-
-//   }
-// }
+const initMorse = transistorFactory(message, "Transmission completed!");
+initMorse.translate();
