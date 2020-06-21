@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 09 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * REVERSE TEXT *
+ * REVERSE TEXT **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Dado un texto cualquiera, invierte el orden de las palabras.
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/

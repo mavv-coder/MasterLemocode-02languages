@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 03 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * QUALIFICATIONS *
+ * QUALIFICATIONS **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Dada la calificación de alumnos de una clase en forma de objeto como el siguiente.
  * Implementa una función que muestre la media de la clase de forma textual, es decir,

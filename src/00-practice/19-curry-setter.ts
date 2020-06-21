@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 19 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * CURRY SETTER *
+ * CURRY SETTER **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * En un formulario tenemos un objeto con los campos name, surname y age que representan
  * un usuario. Crea una función set que reciba un objeto con los campos de usuario, el

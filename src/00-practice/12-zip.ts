@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 12 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * ZIP *
+ * ZIP **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Crea una función zipObject tal que acepte un array de claves como primer argumento y
  * un array de valores como segundo argumento y cuyo objetivo sea crear un objeto uniendo

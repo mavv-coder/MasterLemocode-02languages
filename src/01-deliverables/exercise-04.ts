@@ -1,6 +1,6 @@
 console.log("************** DELIVERABLE 04 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * READ BOOKS *
+ * READ BOOKS **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Crea una función isBookRead que reciba una lista de libros y un título y devuelva si se
  * ha leído o no dicho libro. Un libro es un objeto con `title` como string y `isRead` 

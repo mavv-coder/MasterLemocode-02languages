@@ -1,6 +1,6 @@
 console.log("************** CHALLENGE 03 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * TREE  *
+ * TREE  **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * ¿Cómo generarías con TypeScript un tipado para estructuras en forma de árbol?
  * Un árbol es una estructura que parte de un nodo raiz, a partir del cual salen más 

@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 13 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * ZZCRYPT *
+ * ZZCRYPT **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Descifra el siguiente secreto sabiendo que el alfabeto original ha sufrido la
  * siguiente transformación.

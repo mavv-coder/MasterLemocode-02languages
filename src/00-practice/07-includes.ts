@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 07 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * INCLUDES *
+ * INCLUDES **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * En ES7 ya existe una función de manejo de arrays llamada Array.includes() que indica
  * si un determinado valor figura entre los items de un array dado. Crea una función en

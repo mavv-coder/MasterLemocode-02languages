@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 04 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * CHECK ARGUMENTS *
+ * CHECK ARGUMENTS **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Convierte el siguiente código en algo más compacto y expresivo:
  * function f(input) {

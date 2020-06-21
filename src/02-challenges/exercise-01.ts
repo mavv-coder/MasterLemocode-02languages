@@ -1,6 +1,6 @@
 console.log("************** CHALLENGE 01 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * APLANANDO ARRAYS *
+ * APLANANDO ARRAYS **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Dado un array multidimensional, construye una función inmutable que devuelva el mismo 
  * array aplanado, esto es, con un único nivel de profundidad. Por ejemplo, el siguiente 

@@ -1,6 +1,6 @@
 console.log("************** CHALLENGE 02 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * ACCESO EN PROFUNDIDAD  *
+ * ACCESO EN PROFUNDIDAD **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * APARTADO A:
  * Implementa un mecanismo deepGet para acceder en profundidad a objetos anidados, de modo
@@ -54,7 +54,7 @@ const deepGet = (obj, ...arg) => {
 // console.log(deepGet(myObject)); // {a: 1, b: {...}}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * ACCESO EN PROFUNDIDAD  *
+ * ACCESO EN PROFUNDIDAD **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * APARTADO B:
  * Ahora implementa el complementario, deepSet , que permita guardar valores en 

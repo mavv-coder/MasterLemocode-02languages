@@ -1,6 +1,6 @@
 console.log("************** CHALLENGE 04 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * TRAZAS POR CONSOLA *
+ * TRAZAS POR CONSOLA **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Ejecuta el siguiente código.
  * Las trazas resultante en consola son:

@@ -1,6 +1,6 @@
 console.log("************** DELIVERABLE 02 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * CONCAT *
+ * CONCAT **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Implementa una función concat (inmutable) tal que, dados 2 arrays como entrada, 
  * devuelva la concatenación de ambos. Utiliza rest / spread operators.

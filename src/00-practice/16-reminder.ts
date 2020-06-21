@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 16 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * REMINDER *
+ * REMINDER **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * El siguiente código implementa una sencilla clase que actúa como reminder, es decir,
  * dado un mensaje, lo muestra por consola transcurrido (al menos) el tiempo indicado por

@@ -1,6 +1,6 @@
 console.log("************** DELIVERABLE 01 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-* HEAD *
+* HEAD **
 * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Implementa una función head (inmutable), tal que, dado un array como entrada extraiga y
 * devuelva su primer elemento. Utiliza destructuring.
@@ -13,7 +13,7 @@ console.log(head(fruits));
 console.log(fruits); // No muta original
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * TAIL *
+ * TAIL **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Implementa una función tail (inmutable), tal que, dado un array como entrada devuelva 
  * todos menos el primer elemento. Utiliza rest operator.
@@ -26,7 +26,7 @@ console.log(tail(num));
 console.log(num); // No muta original
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * INIT *
+ * INIT **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Implementa una función init (inmutable), tal que, dado un array como entrada devuelva 
  * todos los elementos menos el último. Utiliza los métodos que ofrece Array.prototype.
@@ -42,7 +42,7 @@ console.log(init(sports));
 console.log(sports); // No muta original
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * LAST *
+ * LAST **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Implementa una función last (inmutable), tal que, dado un array como entrada devuelva 
  * el último elemento.

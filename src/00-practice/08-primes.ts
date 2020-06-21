@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 08 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * PRIMES *
+ * PRIMES **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Crea una función tal que, dado un número entero de inicio from y otro de fin to,
  * encuentre los números primos entre ellos y los muestre por pantalla.

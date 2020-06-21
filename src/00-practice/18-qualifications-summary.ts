@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 18 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * QUALIFICATIONS SUMMARY *
+ * QUALIFICATIONS SUMMARY **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Utilizando TypeScript escribe una función que reciba una lista de estudiantes (que
  * tienen nombre y una lista de notas) y devuelva otra lista donde por cada estudiante

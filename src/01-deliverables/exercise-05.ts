@@ -1,6 +1,6 @@
 console.log("************** DELIVERABLE 05 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * SLOT MACHINE *
+ * SLOT MACHINE **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * El objetivo de este ejercicio es crear una máquina tragaperras utilizando clases donde 
  * cada vez que juguemos insertemos una moneda. Cada máquina tragaperras (instancia) 

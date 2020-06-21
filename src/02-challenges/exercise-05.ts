@@ -1,6 +1,6 @@
 console.log("************** CHALLENGE 05 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * MEMOIZATION *
+ * MEMOIZATION **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * APARTADO A:
  * Implementa un mecanismo de memoización para funciones costosas y tipalo con TypeScript.
@@ -29,7 +29,7 @@ const expensiveFunction: ExpensiveFunction<number> = () => {
 // console.log(memoized()); // 3.1415
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * MEMOIZATION *
+ * MEMOIZATION **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * APARTADO B:
  * ¿Podrías hacerlo en una sola línea?
@@ -39,7 +39,7 @@ const expensiveFunction: ExpensiveFunction<number> = () => {
 // );
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * MEMOIZATION *
+ * MEMOIZATION **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * APARTADO C:
  * Contempla ahora la posibilidad de que la función a memoizar pueda tener argumentos. Por

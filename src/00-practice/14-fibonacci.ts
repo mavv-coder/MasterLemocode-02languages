@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 14 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * FIBONACCI *
+ * FIBONACCI **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Implementa una función para calcular el enenésimo termino de la sucesión de Fibonacci.
  * Esta sucesión tiene sus dos primeros términos prefijados:

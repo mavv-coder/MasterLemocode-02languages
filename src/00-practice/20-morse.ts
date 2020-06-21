@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 20 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * MORSE *
+ * MORSE **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * DESCRIPCIÓN:
  * El ejercicio consiste en, dado cualquier mensaje de entrada, representar por consola el

@@ -1,6 +1,6 @@
 console.log("************** PRACTICE 05 *********************");
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- * DICES *
+ * DICES **
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * Empleando el concepto de closure, emula el comportamiento de 2 dados.
  * Utiliza un closure para almacenar el resultado de tirar 2 dados, y encapsula junto a

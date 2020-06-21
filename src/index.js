@@ -1,5 +1,5 @@
-// PRACTICE - - - - -
-// import "./00-practice/01-biggest-word.js";
+// PRACTICE - - - - - - - - - -
+import "./00-practice/01-biggest-word.js";
 // import "./00-practice/02-values.js";
 // import "./00-practice/03-qualifications.js";
 // import "./00-practice/04-check-arguments.js";
@@ -18,14 +18,14 @@
 // import "./00-practice/17-swap.js";
 // import "./00-practice/18-qualifications-summary.js";
 // import "./00-practice/19-curry-setter.js";
-import "./00-practice/20-morse.js";
-// DERIVERABLE - - - - -
+// import "./00-practice/20-morse.js";
+// DERIVERABLE - - - - - - - - - -
 // import "./01-deliverables/exercise-01.js";
 // import "./01-deliverables/exercise-02.js";
 // import "./01-deliverables/exercise-03.js";
 // import "./01-deliverables/exercise-04.js";
 // import "./01-deliverables/exercise-05.js";
-// CHALLENGE - - - - -
+// CHALLENGE - - - - - - - - - -
 // import "./02-challenges/exercise-01.js";
 // import "./02-challenges/exercise-02.js";
 // import "./02-challenges/exercise-03.js";
